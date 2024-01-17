@@ -14,3 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Working demo link
 
 https://silver-sawine-e32bc2.netlify.app/
+
+### Features added
+- Key events ```up, down, enter, esc scroll```
+- Debounced api request
+- Text highlighter
+- Mouse out events to close the options
