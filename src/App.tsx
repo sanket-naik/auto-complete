@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import AutoComplete from "./container/AutoComplete/AutoComplete";
-import { feetchGithubUserAPI } from "./actions/actions";
+import { feetchGithubUserAPI } from "./endpoints/endpoints";
 import Card from "./container/AutoComplete/components/Card/Card";
 import {
   GithubUserItemType,
