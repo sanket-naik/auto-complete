@@ -15,6 +15,9 @@ function App() {
   const fetchNewRecords = async (value: string) => {
     try {
       const response = await feetchGithubUserAPI(value);
+      if (response?.message) {
+        throw response.message;
+      }
       const { items = [] } = response;
       return items?.map(
         ({ login, id, url, avatar_url }: GithubUserItemType) => {
@@ -28,6 +31,7 @@ function App() {
       );
     } catch (errResponse) {
       /* place to show proper error in a snackbar & log a sentry for the same */
+      console.log(errResponse);
       return [];
     }
   };
