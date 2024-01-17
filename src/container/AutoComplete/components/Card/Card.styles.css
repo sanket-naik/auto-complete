@@ -1,0 +1,34 @@
+.card-container {
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 0.5px solid #ccc;
+  display: flex;
+  background-color: #fff;
+}
+.card-container:hover {
+  background: #e2e2e2;
+  cursor: pointer;
+}
+
+.avatar-wrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.card-title {
+  padding-top: 2px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  color: gray;
+}
+
+.card-flex-item {
+  margin-left: 8px;
+}

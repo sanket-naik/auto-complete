@@ -1,0 +1,26 @@
+.loading {
+  height: 0;
+  width: 0;
+  padding: 9px;
+  border: 3px solid #ccc;
+  border-right-color: #888;
+  border-radius: 66px;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.loading-label {
+  margin: auto 5px;
+  color: rgb(67, 66, 66);
+  font-size: 15px;
+}
+
+.loader-container {
+  padding: 6px 10px;
+  background-color: #fff;
+}

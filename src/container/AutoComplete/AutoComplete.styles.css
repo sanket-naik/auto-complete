@@ -1,0 +1,33 @@
+.input-container {
+  position: relative;
+}
+
+.text-input {
+  border: 1px solid #a09d9d;
+  width: 100%;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.suggestions-container {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  border: 1px solid #ccc;
+  left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 4px;
+  z-index: 1;
+  margin-top: 1px;
+  padding: 0;
+}
+
+.row-item {
+  margin: auto 5px;
+  font-size: 15px;
+  padding: 10px 6px;
+  background-color: #fff;
+}
