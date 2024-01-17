@@ -2,6 +2,8 @@ export type CardPropType = {
   record: RecordType;
   onclick?: (record: RecordType) => void;
   search?: string;
+  onHovered?: (key: boolean) => void;
+  active?: boolean;
 };
 
 export type RecordType = {

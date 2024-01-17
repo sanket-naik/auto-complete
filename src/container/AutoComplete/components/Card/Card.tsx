@@ -3,7 +3,13 @@ import "./Card.styles.css";
 import Highlighter from "../Highlighter/Highlighter";
 import { CardPropType } from "../../AutoComplete.types";
 
-function Card({ record, search = "", onclick }: CardPropType) {
+function Card({
+  record,
+  search = "",
+  onclick,
+  onHovered = () => {},
+  active,
+}: CardPropType) {
   const { label, value, avatar, profileUrl } = record;
 
   const handleClick = () => {
@@ -15,7 +21,12 @@ function Card({ record, search = "", onclick }: CardPropType) {
   };
 
   return (
-    <div className="card-container" onClick={handleClick}>
+    <div
+      className={`card-container ${active && "active"}`}
+      onClick={handleClick}
+      onMouseEnter={() => onHovered(true)}
+      onMouseLeave={() => onHovered(false)}
+    >
       <div>
         <img alt="profile-img" src={avatar} className="avatar-wrapper" />
       </div>

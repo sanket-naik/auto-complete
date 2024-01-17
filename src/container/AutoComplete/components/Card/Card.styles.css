@@ -7,7 +7,7 @@
   display: flex;
   background-color: #fff;
 }
-.card-container:hover {
+.active {
   background: #e2e2e2;
   cursor: pointer;
 }
